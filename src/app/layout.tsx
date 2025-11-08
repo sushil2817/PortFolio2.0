@@ -13,7 +13,6 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: "",
   title: {
     default: DATA.name,
     template: `%s | ${DATA.name}`,
