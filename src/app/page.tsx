@@ -13,6 +13,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
+
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
@@ -24,6 +25,7 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
+              
               <BlurFadeText
                 className="md:text-xl"
                 delay={BLUR_FADE_DELAY}
@@ -36,7 +38,6 @@ export default function Page() {
   <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
   <AvatarFallback>{DATA.initials}</AvatarFallback>
 </Avatar>
-
             </BlurFade>
           </div>
         </div>
